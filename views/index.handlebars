@@ -1,0 +1,34 @@
+<div class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Ache notebooks pelos comentários</h1>
+        <p class="lead text-muted">Exemplo:
+            <i>custo beneficio</i>
+        </p>
+        <form action="/" method="GET" class="form">
+            <div class="form-group">
+                <input type="text" name="search" placeholder="Buscar produtos por comentário..." class="form-control">
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            {{#each products}}
+            <div class="col-md-4">
+                <!-- for each loop in handlebars -->
+                <div class="card md-4" style="width: 18rem;">
+                    <img class="card-img-top filethumb" src="{{img_url}}" alt="Card image cap">
+                    <div class="card-body md-3">
+                        <h5 class="card-title">{{name}}</h5>
+                        <p>Preço: {{price}}</p>
+                        <p>Nota: {{nota}}</p>
+                        <a href="{{url}}">Link do produto</a>
+                    </div>
+                </div>
+            </div>
+            {{else}} {{/each}}
+        </div>
+    </div>
+</div>
