@@ -1,6 +1,7 @@
 # Comment Explorer
 An node.js app that finds notebooks searching for keywords on its user comments, data was scrapped using Scrapy.
 Deployed using Heroku link [Here](https://thawing-reef-33652.herokuapp.com/).
+Every Sunday the spider runs again collecting new data, spider is mantained at the ScrappingHub Cloud.
 
 ## Tools Used
 - Node.js
